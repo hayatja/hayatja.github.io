@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background-color: #e4ddeb; */
+  /* background-image: radial-gradient(#e4ddeb 25%, transparent 20%); */
+  /* radial-gradient(#fff 20%, transparent 20%); */
+  /* background-position: 0 0, 30px 30px; */
+  /* background-size: 60px 60px; */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  font-size: 3em;
+  background: #38214a;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid white;
+  font-weight: 100;
+  font-family: helvetica;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #e4ddeb;
+  color: #38214a;
+}
