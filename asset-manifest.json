@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hayatja/hayatja.github.io/static/css/main.79efc731.css",
+    "main.js": "/hayatja/hayatja.github.io/static/js/main.86b9f326.js",
+    "static/js/787.76dbf929.chunk.js": "/hayatja/hayatja.github.io/static/js/787.76dbf929.chunk.js",
+    "index.html": "/hayatja/hayatja.github.io/index.html",
+    "main.79efc731.css.map": "/hayatja/hayatja.github.io/static/css/main.79efc731.css.map",
+    "main.86b9f326.js.map": "/hayatja/hayatja.github.io/static/js/main.86b9f326.js.map",
+    "787.76dbf929.chunk.js.map": "/hayatja/hayatja.github.io/static/js/787.76dbf929.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79efc731.css",
+    "static/js/main.86b9f326.js"
+  ]
+}
