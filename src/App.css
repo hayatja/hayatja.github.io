@@ -10,6 +10,52 @@
   /* radial-gradient(#fff 20%, transparent 20%); */
   /* background-position: 0 0, 30px 30px; */
   /* background-size: 60px 60px; */
+
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #e4e4e4; /* Lighter text for contrast */
+  background-image: linear-gradient(0deg, #888 1px, transparent 1px),
+                    linear-gradient(90deg, #888 1px, transparent 1px);
+  background-size: 30px 30px; /* Keep the grid size consistent */
+}
+
+.dark-mode button {
+  background: #38214a;
+  color:  #e4ddeb; /* Lighter text color for contrast */
+}
+
+.dark-mode button:hover {
+  background: #997fb3; /* Slightly lighter on hover in dark mode */
+  color: white;
+}
+
+.dark-mode .grid-lines {
+  stroke: #888; /* Grey color for better visibility in dark mode */
+}
+
+/* Dark Mode Toggle Button Style */
+.dark-mode-toggle {
+  width: auto; /* Adjust width to fit content */
+  height: 40px; /* Adjust height for better usability */
+  font-size: 1em; /* Adjust font size for readability */
+  background: #444; /* Dark background for the button */
+  color: white; /* White text/icon */
+  border-radius: 5px;
+  border: 2px solid #565656; /* Border color similar to background for a seamless look */
+  font-weight: normal;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  transition: all 0.3s ease; /* Smooth transition for hover effects and dark mode switch */
+}
+
+/* Adding a white border to the dark-mode toggle button specifically in dark mode */
+.dark-mode .dark-mode-toggle {
+  border: 2px solid white; /* White border for contrast in dark mode */
 }
 
 @media (prefers-reduced-motion: no-preference) {
