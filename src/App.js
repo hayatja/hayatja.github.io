@@ -1,6 +1,9 @@
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faAdjust } from "@fortawesome/free-solid-svg-icons";
 import { faFileInvoice } from "@fortawesome/free-solid-svg-icons";
 import { faCodeCompare } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { Tooltip } from "react-tooltip";
 // import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -9,16 +12,19 @@ import Title from "./components/Title";
 import "./App.css";
 
 function App() {
-  // const notifyResume = () => toast("Resume under development!");
+  const [darkMode, setDarkMode] = useState(false);
 
   return (
     <GridLines
-      className="grid-area"
+      className={`grid-area ${darkMode ? 'dark-mode' : ''}`}
       cellWidth={30}
-      lineColor="#e4ddeb"
+      lineColor={darkMode ? "#666" : "#e4ddeb"}
       strokeWidth={5}
     >
-      <div className="App">
+      <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
+        <button className="dark-mode-toggle" onClick={() => setDarkMode(!darkMode)}>
+          <FontAwesomeIcon icon={faAdjust} />
+        </button>
         <div
           style={{
             display: "flex",
@@ -82,6 +88,18 @@ function App() {
               <FontAwesomeIcon icon={faCodeCompare} />
             </button>
           </a>
+
+          <a
+            href="https://www.linkedin.com/in/hayat-ja/"
+            data-tooltip-id="linkedin-tooltip"
+            data-tooltip-content="LinkedIn"
+            data-tooltip-place="top"
+          >
+            <button>
+            <FontAwesomeIcon icon={faMagnifyingGlass} />
+              </button>
+          </a>
+
         </div>
 
         <Tooltip id="resume-tooltip" />
