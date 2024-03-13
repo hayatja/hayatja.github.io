@@ -104,6 +104,7 @@ function App() {
 
         <Tooltip id="resume-tooltip" />
         <Tooltip id="git-tooltip" />
+        <Tooltip id="linkedin-tooltip" />
 
         {/* <ToastContainer
           position="top-right"

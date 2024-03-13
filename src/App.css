@@ -36,7 +36,6 @@
   stroke: #888; /* Grey color for better visibility in dark mode */
 }
 
-/* Dark Mode Toggle Button Style */
 .dark-mode-toggle {
   width: auto; /* Adjust width to fit content */
   height: 40px; /* Adjust height for better usability */
@@ -53,9 +52,42 @@
   transition: all 0.3s ease; /* Smooth transition for hover effects and dark mode switch */
 }
 
-/* Adding a white border to the dark-mode toggle button specifically in dark mode */
 .dark-mode .dark-mode-toggle {
   border: 2px solid white; /* White border for contrast in dark mode */
+}
+
+/* Default font size */
+.title-animation {
+  font-size: 3em; /* Default font size for larger screens */
+  color: #38214a; /* Moved from inline styles for clarity */
+}
+
+/* Responsive adjustments for even smaller screens*/
+@media (max-width: 414px) {
+  .title-animation {
+    font-size: 2em; 
+  }
+}
+
+@media (max-width: 390px) {
+  .title-animation {
+    font-size: 1.5em; /* Adjust title animation size */
+  }
+
+  button {
+    width: 80px; /* Adjust button size */
+    height: 80px;
+    font-size: 2em; /* Adjust button font size */
+  }
+
+  .App {
+    padding: 10px; /* Adjust the main app padding if necessary */
+  }
+
+  /* Adjust specific styles for smaller icons if using FontAwesomeIcon */
+  .fa-icon {
+    font-size: 1.5em; /* Smaller font size for FontAwesome icons */
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
