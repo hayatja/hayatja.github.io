@@ -14,8 +14,8 @@ const Title = () => {
         2000,
       ]}
       wrapper="span"
+      className="title-animation" // Add this line
       speed={50}
-      className="title-animation" // Added class here
       style={{
         fontWeight: "700",
         fontFamily: "helvetica",
