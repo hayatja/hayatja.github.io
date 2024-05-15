@@ -68,7 +68,7 @@ function App() {
           }}
         >
           <a
-            href={"/Hayat_Resume.pdf"}
+            href={"/hayat_website_resume.pdf"}
             data-tooltip-id="resume-tooltip"
             data-tooltip-content="Resume"
             data-tooltip-place="top"
