@@ -33,7 +33,7 @@ function App() {
 
         <div className="links">
           <a
-            href={"/hayat-resume.pdf"}
+            href={"/hayat_website_resume.pdf"}
             data-tooltip-id="resume-tooltip"
             data-tooltip-content="Resume"
             data-tooltip-place="top"
