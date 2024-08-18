@@ -14,12 +14,11 @@ const Title = () => {
         2000,
       ]}
       wrapper="span"
+      className="title-animation" // Add this line
       speed={50}
       style={{
         fontWeight: "700",
         fontFamily: "helvetica",
-        fontSize: "3em",
-        color: "#38214a",
         textDecoration: "underline",
         background: "#e4ddeb",
         paddingInline: "20px",

@@ -132,6 +132,9 @@ body {
 }
 
 button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 100px;
   height: 100px;
   font-size: 3em;
