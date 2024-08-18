@@ -25,10 +25,11 @@ function App() {
       <div className="content">
         <div className="intro">
           <span className="intro-text">Hi I'm Hayat</span>
+          <div style={{ marginTop: "30px" }}>
+            <Title />
+          </div>
         </div>
-        <div style={{ marginTop: "30px" }}>
-          <Title />
-        </div>
+
 
         <div className="links">
           <a

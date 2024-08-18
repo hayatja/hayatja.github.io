@@ -18,6 +18,7 @@ const Title = () => {
       speed={50}
       style={{
         fontWeight: "700",
+        fontSize: "3em",
         fontFamily: "helvetica",
         textDecoration: "underline",
         background: "#e4ddeb",

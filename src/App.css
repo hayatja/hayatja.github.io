@@ -114,6 +114,8 @@ body {
 }
 
 .intro {
+  font-weight: 700;
+  font-family: "helvetica";
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -121,7 +123,6 @@ body {
 }
 
 .intro-text {
-  font-weight: 100;
   font-size: 3em;
   color: #FFF;
   background: #38214a;
@@ -132,8 +133,8 @@ body {
 }
 
 button {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   font-size: 3em;
   background: #38214a;
   color: white;
