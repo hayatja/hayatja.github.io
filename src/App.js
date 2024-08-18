@@ -36,7 +36,7 @@ function App() {
             href={"/hayat_website_resume.pdf"}
             data-tooltip-id="resume-tooltip"
             data-tooltip-content="Resume"
-            data-tooltip-place="top"
+            data-tooltip-place="bottom"
           >
             <button>
               <FontAwesomeIcon icon={faFileInvoice} />
@@ -47,7 +47,7 @@ function App() {
             href={"https://github.com/hayatja"}
             data-tooltip-id="git-tooltip"
             data-tooltip-content="GitHub"
-            data-tooltip-place="top"
+            data-tooltip-place="bottom"
           >
             <button>
               <FontAwesomeIcon icon={faCodeCompare} />
@@ -55,10 +55,11 @@ function App() {
           </a>
 
           <a
-            href={"https://www.linkedin.com/in/your-linkedin-profile/"}
+            href={"https://www.linkedin.com/in/hayat-ja/"}
             data-tooltip-id="linkedin-tooltip"
             data-tooltip-content="LinkedIn"
-            data-tooltip-place="top"
+            data-tooltip-place="bottom"
+            
           >
             <button>
               <FontAwesomeIcon icon={faLinkedin} />
