@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="74.356903mm"
+   height="73.020599mm"
+   viewBox="0 0 263.46934 258.73441"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Capital turned closed omega.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="160.93193"
+     inkscape:cy="145.06662"
+     inkscape:document-units="px"
+     inkscape:current-layer="text3336"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-326.56745,-450.16523)">
+    <g
+       style="font-style:normal;font-weight:normal;font-size:375px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="text3336">
+      <path
+         d="m 326.56745,571.71906 q 0,-26.95096 1.37461,-36.92283 0.91641,-7.27677 3.43655,-15.63158 2.29103,-8.0853 6.1858,-17.24862 10.08057,-23.44737 27.26335,-37.46187 18.32832,-14.55355 39.86407,-14.28403 28.17976,0 42.15509,19.67422 2.06192,2.9646 3.89476,6.19871 1.60374,3.23412 2.74927,7.27677 4.58206,13.20599 4.81116,13.47551 1.83282,-8.35483 11.45519,-26.95099 13.97534,-19.67422 42.15509,-19.67422 21.30666,-0.26952 39.63496,14.28403 17.8701,14.28401 27.26336,37.46187 7.7895,17.78764 9.85145,32.8802 1.37463,9.97187 1.37463,36.92283 0,60.10072 -37.11482,98.10163 -38.26032,39.07894 -94.61986,39.07894 -56.35953,0 -94.61986,-39.07894 -37.1148,-38.00091 -37.1148,-98.10163 z m 42.15507,-18.05713 q 0,61.71776 24.51411,102.14424 24.5141,40.696 65.06548,41.23501 40.78049,-0.53901 64.83637,-41.23501 24.74322,-40.9655 24.74322,-102.14424 0,-28.56805 -9.16417,-50.93739 -11.45518,-29.37656 -32.30362,-28.56805 -23.8268,0.53903 -31.84542,19.94375 -2.97835,7.54626 -6.18581,36.65334 2.74925,21.83031 2.74925,36.11433 0,9.43284 -1.14552,18.32668 -1.14553,8.89382 -3.20747,17.51813 -1.37461,5.39019 -9.85145,5.39019 -8.47685,0 -9.62236,-5.39019 -4.35296,-16.44011 -4.35296,-35.84481 0,-14.82304 5.04027,-36.11433 -2.74924,-29.10708 -6.1858,-36.65334 -8.01864,-19.67423 -31.61633,-19.94375 -20.84843,-0.80851 -32.30362,28.56805 -9.16417,22.36934 -9.16417,50.93739 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Universalia;-inkscape-font-specification:Universalia"
+         id="path3343"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>

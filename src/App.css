@@ -1,30 +1,134 @@
+:root {
+  --red-rgb: 255 105 180; /* Hot Pink */
+  --blue-rgb: 135 206 250; /* Light Sky Blue */
+  --green-rgb: 144 238 144; /* Light Green */
+  --yellow-rgb: 255 255 102; /* Light Yellow */
+  --background-rgb: 0 0 0; 
+  --grid-line-rgb: 216 191 216; /* Pastel Purple Grid Lines */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  background: rgb(var(--background-rgb));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#container {
+  width: 140rem;
+  aspect-ratio: 1;
+  display: grid;
+  grid-template-rows: repeat(40, 1fr);
+  grid-template-columns: repeat(40, 1fr);
+  position: absolute;
+  transform: rotate(90deg) scale(1.25);
+}
+
+#container:after,
+#container:before {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  pointer-events: none;
+}
+
+#container:after {
+  z-index: 3;
+  background: radial-gradient(circle, transparent 25%, rgb(var(--background-rgb)) 80%);
+}
+
+.tile {
+  border: 1px solid rgb(var(--grid-line-rgb) / 45%);
+  transition: background-color 1500ms;
+}
+
+.tile:hover {
+  transition-duration: 0ms;
+}
+
+.tile:nth-child(4n):hover {
+  background-color: rgb(var(--red-rgb));
+}
+
+.tile:nth-child(4n + 1):hover {
+  background-color: rgb(var(--blue-rgb));
+}
+
+.tile:nth-child(4n + 2):hover {
+  background-color: rgb(var(--green-rgb));
+}
+
+.tile:nth-child(4n + 3):hover {
+  background-color: rgb(var(--yellow-rgb));
+}
+
+.tile:nth-child(7n):hover {
+  background-color: rgb(var(--blue-rgb));
+}
+
+.tile:nth-child(7n + 3):hover {
+  background-color: rgb(var(--green-rgb));
+}
+
+.tile:nth-child(7n + 5):hover {
+  background-color: rgb(var(--yellow-rgb));
+}
+
+.tile:nth-child(7n + 6):hover {
+  background-color: rgb(var(--red-rgb));
+}
+
+.tile:nth-child(11n + 1):hover {
+  background-color: rgb(var(--red-rgb));
+}
+
+.tile:nth-child(11n + 4):hover {
+  background-color: rgb(var(--blue-rgb));
+}
+
+.tile:nth-child(11n + 7):hover {
+  background-color: rgb(var(--green-rgb));
+}
+
+.tile:nth-child(11n + 10):hover {
+  background-color: rgb(var(--yellow-rgb));
+}
+
+.content {
+  z-index: 100;
+  position: relative;
+}
+
+.intro {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
-  /* background-color: #e4ddeb; */
-  /* background-image: radial-gradient(#e4ddeb 25%, transparent 20%); */
-  /* radial-gradient(#fff 20%, transparent 20%); */
-  /* background-position: 0 0, 30px 30px; */
-  /* background-size: 60px 60px; */
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.intro-text {
+  font-weight: 100;
+  font-size: 3em;
+  color: #FFF;
+  background: #38214a;
+  padding-inline: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
 }
 
 button {
@@ -36,7 +140,6 @@ button {
   border-radius: 10px;
   border: 2px solid white;
   font-weight: 100;
-  font-family: helvetica;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -44,4 +147,11 @@ button {
 button:hover {
   background: #e4ddeb;
   color: #38214a;
+}
+
+.links {
+  margin-top: 70px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }

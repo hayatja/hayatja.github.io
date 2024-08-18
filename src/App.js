@@ -1,66 +1,36 @@
+import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileInvoice } from "@fortawesome/free-solid-svg-icons";
 import { faCodeCompare } from "@fortawesome/free-solid-svg-icons";
-import { Tooltip } from "react-tooltip";
-// import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import GridLines from "react-gridlines";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Title from "./components/Title";
+import { Tooltip } from "react-tooltip";
 import "./App.css";
 
 function App() {
-  // const notifyResume = () => toast("Resume under development!");
+  useEffect(() => {
+    const container = document.querySelector("#container");
+    const tile = document.createElement("div");
+    tile.className = "tile";
+
+    for (let i = 0; i < 1599; i++) {
+      container.appendChild(tile.cloneNode());
+    }
+  }, []);
 
   return (
-    <GridLines
-      className="grid-area"
-      cellWidth={30}
-      lineColor="#e4ddeb"
-      strokeWidth={5}
-    >
-      <div className="App">
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
-        >
-          <div
-            style={{
-              fontWeight: "100",
-              fontFamily: "helvetica",
-              fontSize: "3em",
-              color: "#FFF",
-            }}
-          >
-            <span
-              style={{
-                background: "#38214a",
-                paddingInline: "20px",
-                paddingTop: "10px",
-                paddingBottom: "10px",
-                borderRadius: "10px",
-              }}
-            >
-              Hi I'm Hayat
-            </span>
-            {/* <span>&nbsp;</span> */}
-          </div>
-          <div style={{ marginTop: "30px" }}>
-            <Title></Title>
-          </div>
+    <div className="App">
+      <div id="container"></div>
+
+      <div className="content">
+        <div className="intro">
+          <span className="intro-text">Hi I'm Hayat</span>
+        </div>
+        <div style={{ marginTop: "30px" }}>
+          <Title />
         </div>
 
-        <div
-          style={{
-            marginTop: "70px",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            gap: "20px",
-          }}
-        >
+        <div className="links">
           <a
             href={"/hayat-resume.pdf"}
             data-tooltip-id="resume-tooltip"
@@ -82,25 +52,24 @@ function App() {
               <FontAwesomeIcon icon={faCodeCompare} />
             </button>
           </a>
+
+          <a
+            href={"https://www.linkedin.com/in/your-linkedin-profile/"}
+            data-tooltip-id="linkedin-tooltip"
+            data-tooltip-content="LinkedIn"
+            data-tooltip-place="top"
+          >
+            <button>
+              <FontAwesomeIcon icon={faLinkedin} />
+            </button>
+          </a>
         </div>
 
         <Tooltip id="resume-tooltip" />
         <Tooltip id="git-tooltip" />
-
-        {/* <ToastContainer
-          position="top-right"
-          autoClose={5000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="dark"
-        ></ToastContainer> */}
+        <Tooltip id="linkedin-tooltip" />
       </div>
-    </GridLines>
+    </div>
   );
 }
 
