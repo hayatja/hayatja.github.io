@@ -1,7 +1,7 @@
 {
   "name": "hayat-jami-home",
   "version": "0.1.0",
-  "homepage": "https://hayatcodes.com/",
+  "homepage": "https://www.hayatcodes.com/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
