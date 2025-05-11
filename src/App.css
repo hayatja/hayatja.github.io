@@ -117,14 +117,14 @@ body {
 }
 
 .title-container {
-  position: relative;
-  display: flex;
-  justify-content: center; /* Ensure content is horizontally centered */
-  align-items: center;     /* Ensure content is vertically centered */
+  position: absolute;
+  top: 50%;           /* Vertically centered */
+  left: 50%;          /* Horizontally centered */
+  transform: translate(-50%, -50%); /* Center it */
+  z-index: 101;
   text-align: center;
-  width: 100%;             /* Full width of the container */
-  height: 100%;            /* Full height of the container */
 }
+
 
 .title-animation {
   font-weight: 700;
@@ -177,7 +177,7 @@ button:hover {
 }
 
 .links {
-  margin-top: 30px;
+  margin-top: 105px; /* for whatever reason, handles all the spacing between items (intro, title animation and buttons) */
   display: flex;
   gap: 20px;
   justify-content: center;
